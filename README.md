@@ -13,6 +13,13 @@ See example_configurations/Tevo Tarantula for other Tarantula configurations:
 - Tarantula-04
   - Large bed, NO bed autolevel, SD support, EEPROM enabled
 
+Do you have a configuration for the Tarantula that is not covered above? Would
+you like to share it with others by having it added to the above examples?
+If so, please contact me at jb.github@rcairgallery.com and we'll work something
+out.
+
+Thanks!
+
 ============================================================================
 
 # Marlin 3D Printer Firmware
