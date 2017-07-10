@@ -1,24 +1,21 @@
 ============================================================================
 
+# Ricardo Angeli's Marlin Bugfix v 1.1.x
+
 __Configured for MY Tevo Tarantula. It works for me, it may not work for you!__
 
-See example_configurations/Tevo Tarantula for other Tarantula configurations:
+See example_configurations/Tevo Tarantula for Jim Brown's example configurations.
 
-- Tarantula-01
-  - Small bed, BLTouch, NO SD support, EEPROM enabled
-- Tarantula-02
-  - Small bed, BLTouch, SD support, EEPROM enabled
-- Tarantula-03
-  - Small bed, NO bed autolevel, SD support, EEPROM enabled
-- Tarantula-04
-  - Large bed, NO bed autolevel, SD support, EEPROM enabled
-  
-Do you have a configuration for the Tarantula that is not covered above? Would
-you like to share it with others by having it added to the above examples?
-If so, please contact me at jb.github (at) rcairgallery (dot) com and we'll work something
-out.
+This fork of Marlin is based on Jim Brown's Tarantula-03 example configuration for the TEVO Tarantula.  However, I've customized for my particular setup.  Below is a description of my current setup:
 
-Thanks!
+*  Small bed (200mm x 200mm)
+*  Manual bed leveling
+*  SD Support
+*  EEPROM enabled
+*  PETG plastic instead of ABS
+*  [Dual Cooling Fan Duct](https://www.thingiverse.com/thing:2072110) (this reduces X axis range from 200mm to 190mm)
+
+It also includes small tweaks to suit my needs.
 
 ============================================================================
 
