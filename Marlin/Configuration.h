@@ -54,8 +54,9 @@
  * Offset from endpoints to get nozzle to 0,0 (front/left of bed)
  * (How to center prints: https://github.com/JimBrown/MarlinTarantula/wiki/How-to-center-your-prints-(EasyConfig))
  */
-#define NOZZLE_X          0
-#define NOZZLE_Y          0
+#define NOZZLE_X          -1.9
+#define NOZZLE_Y          -6.9
+#define NOZZLE_Z           3.8 // 2.6 + 1.2
 
 /**
  * Minimal Z height (in mm) before homing (G28) for Z clearance above the bed, clamps, ...
@@ -79,7 +80,7 @@
  * Z-Probe type (must be none or one of them)
  * If a Z-Probe type is selected, a Bed Leveling type other than MANUAL must be selected.
  */
-#define BLTOUCH         // ANTClabs BLTouch sensor (might also work with clones)
+//#define BLTOUCH         // ANTClabs BLTouch sensor (might also work with clones)
 //#define SN04          // Green sensor
 //#define INDUCTIVE_NO  // Normally open inductive sensor
 //#define INDUCTIVE_NC  // Normally closed inductive sensor
@@ -92,9 +93,9 @@
  */
 //#define TRIPOINT
 //#define LINEAR
-#define BILINEAR
+//#define BILINEAR
 //#define UBL
-//#define MANUAL
+#define MANUAL
 
 /**
  * Z-Probe offset from nozzle (https://github.com/JimBrown/MarlinTarantula/wiki/How-to-determine-your-Z-Probe-offset)
@@ -110,7 +111,7 @@
  * Number of grid points in each direction
  * Minimum 3. Maximum 15 for UBL. Maximum 7 for MANUAL
  */
-#define GRID_POINTS        3
+#define GRID_POINTS       5
 
 /**
  * Margin around perimiter of bed for probing (will not probe outside this margin)
@@ -153,18 +154,18 @@
 /**
  * TEVO Tarantula Custom PID Settings - Stock Hotend
  */
-#define  hot_Kp 27.60
-#define  hot_Ki 2.01
-#define  hot_Kd 94.97
+#define  hot_Kp 37.61
+#define  hot_Ki 5.53
+#define  hot_Kd 63.93
 // FIND YOUR OWN: "M303 E0 C8 S200" to run autotune on the hotend at 200 degreesC for 8 cycles.
 // More info here: http://reprap.org/wiki/PID_Tuning
 
 /**
  * TEVO Tarantula Custom PID Settings - Stock Heatbed
  */
-#define  bed_Kp 444.92
-#define  bed_Ki 77.59
-#define  bed_Kd 637.85
+#define  bed_Kp 473.50
+#define  bed_Ki 86.27
+#define  bed_Kd 649.70
 // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 // More info here: http://reprap.org/wiki/PID_Tuning
 
@@ -1308,7 +1309,7 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 190
+#define X_BED_SIZE 200
 #if ENABLED(LARGE_BED)
   #define Y_BED_SIZE 280
 #else
@@ -1625,7 +1626,7 @@
 // For DELTA this is the top-center of the Cartesian print volume.
 #define MANUAL_X_HOME_POS NOZZLE_X
 #define MANUAL_Y_HOME_POS NOZZLE_Y
-//#define MANUAL_Z_HOME_POS 0 // Distance between the nozzle to printbed after homing
+#define MANUAL_Z_HOME_POS NOZZLE_Z // Distance between the nozzle to printbed after homing
 
 // Use "Z Safe Homing" to avoid homing with a Z probe outside the bed area.
 //
