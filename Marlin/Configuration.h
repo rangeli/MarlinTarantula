@@ -38,7 +38,7 @@
 #define SDSUPPORT
 #define CHANGE_Y_DIRECTION        // If your bed homes in the wrong direction (it should move front to back) enable this.
 //#define CHANGE_X_DIRECTION        // If your X carriage homes in the wrong direction (it should move right to left) enable this.
-//#define CHANGE_Z_DIRECTION        // If your Z homes in the wrong direction (it should move top to bottom) enable this.
+#define CHANGE_Z_DIRECTION        // If your Z homes in the wrong direction (it should move top to bottom) enable this.
 //#define HOTEND_E3DV6              // Genuine E3D v6 hotend.
 //#define FULL_GRAPHIC_SMART        // Enable this if you have a RepRap Discount Full Graphic Smart Controller (The
                                     // stock controller is a RepRap Discount Smart Controller)
@@ -56,7 +56,7 @@
  */
 #define NOZZLE_X          -1.9
 #define NOZZLE_Y          -6.9
-#define NOZZLE_Z           3.8 // 2.6 + 1.2
+#define NOZZLE_Z           0.0 // 3.8
 
 /**
  * Minimal Z height (in mm) before homing (G28) for Z clearance above the bed, clamps, ...
@@ -74,7 +74,7 @@
  * Z Axis steps per mm (Default for stock lead screw is 1600)
  * If you install a lead screw with a different pitch and/or lead, change this
  */
-#define Z_STEPS      1600 // Stock lead screw
+#define Z_STEPS      400 // Inverted Z Axis
 
 /**
  * Z-Probe type (must be none or one of them)
