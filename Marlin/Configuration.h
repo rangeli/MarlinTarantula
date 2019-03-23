@@ -39,7 +39,7 @@
 #define CHANGE_Y_DIRECTION        // If your bed homes in the wrong direction (it should move front to back) enable this.
 //#define CHANGE_X_DIRECTION        // If your X carriage homes in the wrong direction (it should move right to left) enable this.
 #define CHANGE_Z_DIRECTION        // If your Z homes in the wrong direction (it should move top to bottom) enable this.
-//#define HOTEND_E3DV6              // Genuine E3D v6 hotend.
+#define HOTEND_E3DV6              // Genuine E3D v6 hotend.
 //#define FULL_GRAPHIC_SMART        // Enable this if you have a RepRap Discount Full Graphic Smart Controller (The
                                     // stock controller is a RepRap Discount Smart Controller)
 //#define Z_DUAL_STEPPER_DRIVERS    // Enable this if you have dual Z stepper motors with the second stepper motor
@@ -144,7 +144,7 @@
 #define EXTRUDER_E1_Y 0
 #define EXTRUDER_E1_Z 0
 
-/** 
+/**
  * Secondary Extruder steps per mm
  * (how to calibrate: https://toms3d.org/2014/04/06/3d-printing-guides-calibrating-your-extruder/)
  */
@@ -154,9 +154,9 @@
 /**
  * TEVO Tarantula Custom PID Settings - Stock Hotend
  */
-#define  hot_Kp 37.61
-#define  hot_Ki 5.53
-#define  hot_Kd 63.93
+#define  hot_Kp 19.84 // Stock = 37.61
+#define  hot_Ki 3.40 // Stock = 5.53
+#define  hot_Kd 28.91 // Stock = 63.93
 // FIND YOUR OWN: "M303 E0 C8 S200" to run autotune on the hotend at 200 degreesC for 8 cycles.
 // More info here: http://reprap.org/wiki/PID_Tuning
 
