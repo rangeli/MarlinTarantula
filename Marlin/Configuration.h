@@ -231,7 +231,7 @@
  */
 //#define EXTRUDER_USE_E1
 //#define X_AXIS_USE_E1
-//#define Y_AXIS_USE_E1
+#define Y_AXIS_USE_E1
 //#define Z_AXIS_USE_E1
 
 /**
